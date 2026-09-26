@@ -1,0 +1,12 @@
+.gradle/
+build/
+out/
+*.iml
+.idea/
+.claude/
+.DS_Store
+.intellijPlatform/
+.kotlin/
+
+# 评审过程文档（内部讨论，不入库）
+HANDOFF-REVIEW.md

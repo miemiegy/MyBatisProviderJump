@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>mybatis-provider-jump</id>
+    <name>MyBatisProviderJump</name>
+    <vendor email="miemiegyy@gmail.com">Gavin Yang</vendor>
+
+    <description><![CDATA[
+        Gutter navigation between MyBatis annotation-based Mapper methods and their SQL
+        provider methods — like MyBatisX's bird icon, but for the annotation style.<br/>
+        <br/>
+        <b>Forward</b> — a forward icon appears next to Mapper methods annotated with
+        <code>@SelectProvider</code> / <code>@InsertProvider</code> / <code>@UpdateProvider</code> /
+        <code>@DeleteProvider</code>; click it to jump to the provider method.<br/>
+        <br/>
+        <b>Back</b> — a back icon appears next to provider methods; click it to jump back to
+        the referencing Mapper method(s) (a popup list is shown when there are multiple
+        references).<br/>
+        <br/>
+        <b>Supported conventions:</b><br/>
+        • Explicit <code>type</code>/<code>method</code> attributes, or the bare short syntax
+        <code>@SelectProvider(ProviderClass.class)</code><br/>
+        • Same-name convention: omit <code>method</code> when the provider implements
+        <code>ProviderMethodResolver</code><br/>
+        • Default <code>provideSql</code> method when the resolver is not implemented<br/>
+        • Overloaded provider methods are matched by the mapper's parameter count
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.lineMarkerProvider language="JAVA"
+            implementationClass="io.github.miemiegyy.mybatisproviderjump.SelectProviderLineMarkerProvider"/>
+        <codeInsight.lineMarkerProvider language="JAVA"
+            implementationClass="io.github.miemiegyy.mybatisproviderjump.ProviderToMapperLineMarkerProvider"/>
+    </extensions>
+</idea-plugin>

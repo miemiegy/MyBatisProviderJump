@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- MyBatisProviderJump 插件图标：深绿圆角底 + 双向白色箭头（Mapper <-> Provider） -->
+  <rect x="0" y="0" width="40" height="40" rx="8" ry="8" fill="#1B7F5C"/>
+  <g stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 正向箭头（Forward）：Mapper -> Provider -->
+    <path d="M9 15 L25 15 M21 11 L25 15 L21 19"/>
+    <!-- 反向箭头（Back）：Provider -> Mapper -->
+    <path d="M31 25 L15 25 M19 21 L15 25 L19 29"/>
+  </g>
+</svg>
