@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "io.github.miemiegyy"          // 组织名（中性，无公司标识）
-version = "1.3.0"                    // 插件版本（1.3.0：正式版；不设 untilBuild 上限，兼容未来 IDE）
+version = "1.3.1"                    // 插件版本（1.3.1：正式版；不设 untilBuild 上限，兼容未来 IDE）
 
 repositories {
     intellijPlatform { defaultRepositories() } // IntelliJ 平台官方仓库（create() 方式下载 IDE 时用）
@@ -41,8 +41,10 @@ intellijPlatform {
         // 发布到 JetBrains Marketplace 的版本变更说明（会打进 plugin.xml 的 change-notes）
         changeNotes.set(
             """
+            <b>1.3.1</b><br/>
+            - Expand IDE compatibility: support IDEA 2024.1+ ~ 2026+ (sinceBuild 241, open upper bound)<br/>
+            <br/>
             <b>1.3.0</b><br/>
-            - Compatibility: IDEA 2024.1+ (sinceBuild 241, no until-build upper bound)<br/>
             - Fix bare <code>@SelectProvider(X.class)</code> short syntax (value attribute) in both directions<br/>
             - Same-name convention: verify <code>ProviderMethodResolver</code>; fall back to MyBatis default <code>provideSql</code><br/>
             - Reverse lookup batched per provider class (one ReferencesSearch per class per pass)<br/>

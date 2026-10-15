@@ -32,7 +32,7 @@
 # 1. 生成/更新 wrapper（已配置好，通常无需执行）
 gradle wrapper --gradle-version 8.14
 
-# 2. 构建插件产物（build/distributions/MyBatisProviderJump-1.0.0.zip）
+# 2. 构建插件产物（build/distributions/MyBatisProviderJump-1.3.1.zip）
 ./gradlew buildPlugin
 
 # 3. 启动沙箱 IDE 验证：打开任意含 @SelectProvider 的 Mapper，

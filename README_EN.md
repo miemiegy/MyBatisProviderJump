@@ -32,7 +32,7 @@ Author: Gavin Yang (miemiegyy@gmail.com)
 # 1. Generate/update the wrapper (already configured, usually unnecessary)
 gradle wrapper --gradle-version 8.14
 
-# 2. Build the plugin artifact (build/distributions/MyBatisProviderJump-1.0.0.zip)
+# 2. Build the plugin artifact (build/distributions/MyBatisProviderJump-1.3.1.zip)
 ./gradlew buildPlugin
 
 # 3. Launch a sandbox IDE to verify: open any project containing a Mapper
