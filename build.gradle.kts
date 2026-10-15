@@ -35,14 +35,14 @@ dependencies {
 intellijPlatform {
     pluginConfiguration {
         ideaVersion {
-            sinceBuild.set("251")   // 兼容从 2025.1 开始
+            sinceBuild.set("241")   // 兼容从 2024.1 开始（覆盖 2024.1 ~ 2025 及未来版本）
             // 不设 untilBuild 属性：官方认可的“兼容所有未来 IDE 版本”写法（Marketplace 校验禁止 999.* 魔法值）
         }
         // 发布到 JetBrains Marketplace 的版本变更说明（会打进 plugin.xml 的 change-notes）
         changeNotes.set(
             """
             <b>1.3.0</b><br/>
-            - Open compatibility upper bound: IDEA 2025.1+ (no until-build upper bound)<br/>
+            - Compatibility: IDEA 2024.1+ (sinceBuild 241, no until-build upper bound)<br/>
             - Fix bare <code>@SelectProvider(X.class)</code> short syntax (value attribute) in both directions<br/>
             - Same-name convention: verify <code>ProviderMethodResolver</code>; fall back to MyBatis default <code>provideSql</code><br/>
             - Reverse lookup batched per provider class (one ReferencesSearch per class per pass)<br/>

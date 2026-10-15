@@ -18,7 +18,7 @@
 | intellij-platform-gradle-plugin | 2.5.0 |
 | 目标平台 | IntelliJ IDEA 2025.2.4（build 252） |
 | 构建 JDK | 21（IDEA 2025 平台 jar 为 Java 21 字节码；`jvmTarget` 仍为 17） |
-| 兼容区间 | sinceBuild `251` 起、不设 untilBuild 上限（IDEA 2025.1 及以上，含未来版本） |
+| 兼容区间 | sinceBuild `241` 起、不设 untilBuild 上限（IDEA 2024.1 及以上，含未来版本） |
 
 ## 国内镜像
 

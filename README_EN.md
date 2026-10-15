@@ -18,7 +18,7 @@ Author: Gavin Yang (miemiegyy@gmail.com)
 | intellij-platform-gradle-plugin | 2.5.0 |
 | Target platform | IntelliJ IDEA 2025.2.4 (build 252) |
 | Build JDK | 21 (IDEA 2025 platform jars are Java 21 bytecode; `jvmTarget` stays 17) |
-| Compatibility | sinceBuild `251`, no untilBuild upper bound (IDEA 2025.1 and later, including future versions) |
+| Compatibility | sinceBuild `241`, no untilBuild upper bound (IDEA 2024.1 and later, including future versions) |
 
 ## Mirrors (for users in China)
 
