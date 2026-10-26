@@ -1,5 +1,9 @@
 # MyBatisProviderJump
 
+[![JetBrains Plugin](https://img.shields.io/jetbrains/plugin/v/34564-mybatisproviderjump.svg?label=Marketplace)](https://plugins.jetbrains.com/plugin/34564-mybatisproviderjump)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/34564-mybatisproviderjump.svg?label=Downloads)](https://plugins.jetbrains.com/plugin/34564-mybatisproviderjump)
+[![License](https://img.shields.io/github/license/miemiegy/MyBatisProviderJump)](LICENSE)
+
 为 MyBatis 注解式 Mapper 提供 gutter 导航图标（类似 MyBatisX 在 XML Mapper 场景的小鸟图标，但面向注解方式）。
 
 作者：Gavin Yang（miemiegyy@gmail.com）
